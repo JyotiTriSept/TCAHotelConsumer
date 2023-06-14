@@ -19,5 +19,5 @@ jobs:
            username: TCAContainterRegs
            password: mzygmrDhf764J3fb+Y27fb3oe0NH8n7HLcjBaMn2RF+ACRCWQbvm
       - run: |
-          docker build . -t ${{ secrets.ACR_ENDPOINT }}/knowledgefactory:${{ github.sha }}
-          docker push ${{ secrets.ACR_ENDPOINT }}/knowledgefactory:${{ github.sha }}
+          docker build . -t tcacontainterregs.azurecr.io/tcahotelconsumer:${{ github.sha }}
+          docker push tcacontainterregs.azurecr.io/tcahotelconsumer:${{ github.sha }}
